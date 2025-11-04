@@ -1,0 +1,42 @@
+.card-image-link img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.beneficio0 {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.beneficio0 h3 {
+    color: #e64a19;
+    ;
+}
+
+.recursos h2 {
+    margin-bottom: 5px;
+}
+
+.introducao-nacoes {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introducao-nacoes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.introducao-nacoes p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}

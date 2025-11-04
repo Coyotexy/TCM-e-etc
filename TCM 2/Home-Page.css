@@ -1,0 +1,485 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #a6a6a6, #bfbfbf);
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Link da logo */
+.logo-link {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.logo-link:hover {
+    background-color: transparent !important;
+}
+
+.logo-link img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logo-link img:hover {
+    transform: scale(1.05);
+}
+
+header a,
+.btn {
+    color: #1e1e1e;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+header a:hover,
+.btn:hover {
+    color: #ff5722;
+    background-color: rgba(255, 87, 34, 0.1);
+}
+
+/* Hamburguer menu */
+.hamburguer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    background-color: #ff5722;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.hamburguer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i.introducao {
+    font-size: 24px;
+}
+
+.hamburguermostrar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 200px;
+    z-index: 100;
+}
+
+.hamburguermostrar a {
+    display: block;
+    padding: 8px 12px;
+    margin: 5px 0;
+    color: #333;
+    border-top: 1px solid #666;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: background-color 0.3s;
+}
+
+.hamburguermostrar a:hover {
+    background-color: #f0f0f0;
+    color: #ff5722;
+}
+
+.hamburguer.active .hamburguermostrar {
+    display: block;
+}
+
+.video {
+    background-color: #f9f9f9;
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Main */
+main {
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo {
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    background: url('Imagens/apache.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.banner-conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 🔹 Melhora legibilidade */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+}
+
+
+/* Parte de cima */
+.cima {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cima p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.cima img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.cima img:hover {
+    transform: scale(1.02);
+}
+
+/* Parte de baixo */
+.baixo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção de recursos */
+.oquetem {
+    margin: 50px 0;
+    padding: 30px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.oquetem h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.conteiner-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.card-link {
+    display: inline-block;
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card-link:hover {
+    color: #e64a19;
+}
+
+/* Seção Por que usar nosso site */
+.por-que {
+    margin: 50px 0;
+}
+
+.por-que h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.beneficio {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #3c3b6e;
+}
+
+.beneficio2 {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #3c3b6e;
+}
+
+.beneficio3 {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.beneficio h3 {
+    margin-bottom: 15px;
+    color: #ff5722;
+}
+
+.beneficio2 h3 {
+    color: #ff5722;
+}
+
+.beneficio3 h3 {
+    color: #ff5722;
+}
+
+.beneficio p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffe0d6;
+}
+
+.Nação img {
+    flex: 1;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    .video {
+        width: 100px;
+    }
+
+    header a,
+    .btn {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .cima {
+        flex-direction: column;
+    }
+
+    .cima p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    .hamburguer {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .menu,
+    header a {
+        margin-bottom: 10px;
+    }
+
+    .baixo {
+        max-width: 100%;
+    }
+
+    .conteiner-cards,
+    .beneficios {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cima p,
+    .baixo {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .banner {
+        padding: 50px 15px;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+}
