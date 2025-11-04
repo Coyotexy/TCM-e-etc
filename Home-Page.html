@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - War Thunder for Noobs</title>
+    <link rel="stylesheet" href="Home-Page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home-Page.html" class="logo-link">
+            <img src="Imagens/Logo.png" alt="Logo do site War Thunder for Noobs - Clique para voltar ao início">
+        </a>
+        <a href="Nacoes.html">Nações</a>
+        <a href="Veiculos.html">Veículos</a>
+        <a href="Interface-do-Jogo.html">Interface do Jogo</a>
+        <a href="Dicas importantes.html">Dicas Importantes</a>
+
+        <div class="hamburguer" id="hamburguerMenu">
+            <button onclick="abreFecha()" aria-label="Abrir menu">
+                <i id="hamburguer" class="fa fa-bars introducao" aria-hidden="true"></i>
+            </button>
+            <div class="hamburguermostrar" id="submenu">
+                <a href="BatalhasSimulacao.html">Batalhas Simulação</a>
+                <a href="Maisconteudos.html">Mais conteúdos</a>
+                <a href="GuiasAvancados.html">Guias Avançados</a>
+                <a href="Novidades.html">Novidades</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-conteudo">
+                <h1>Bem-vindo ao War Thunder for Noobs!</h1>
+                <p>Seu guia definitivo para dominar os campos de batalha de War Thunder</p>
+            </div>
+        </section>
+        <div class="video">
+            <video width="620" height="340" controls>
+                <source src="Imagens/War Thunder para Iniciantes.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="conteudo" id="conteudo-principal">
+            <div class="cima">
+                <p>
+                    Prepare-se para decolar, acelerar e dominar os campos de batalha! Aqui no <strong>War Thunder for
+                        Noobs</strong>,
+                    você encontra tudo o que precisa para evoluir no universo de War Thunder – o aclamado jogo de
+                    combate militar
+                    online que coloca você no centro da ação com aviões, tanques e navios de guerra recriados com
+                    incrível realismo.
+                </p>
+                <img src="Imagens/t55.webp" alt="Imagem de tanque T-55 em War Thunder">
+            </div>
+
+            <div class="baixo">
+                <p>
+                    Seja você um piloto experiente, um comandante de blindados ou um marinheiro iniciante, nosso
+                    objetivo é
+                    oferecer conteúdo de qualidade para todos os níveis de jogadores. Fique por dentro das últimas
+                    atualizações,
+                    guias estratégicos, dicas de veículos, eventos especiais e muito mais.
+                </p>
+            </div>
+        </div>
+
+        <section class="oquetem">
+            <h2>O que você encontra aqui</h2>
+            <div class="conteiner-cards">
+                <div class="card">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    <h3>Guias de Nações</h3>
+                    <p>Descubra as características únicas de cada nação e escolha a que melhor se adapta ao seu estilo
+                        de jogo.</p>
+                    <a href="Nacoes.html" class="card-link">Explorar nações</a>
+                </div>
+                <div class="card">
+                    <i class="fa fa-crosshairs" aria-hidden="true"></i>
+                    <h3>Análises de Veículos</h3>
+                    <p>Conheça os pontos fortes e fracos de cada veículo antes de entrar em batalha.</p>
+                    <a href="Veiculos.html" class="card-link">Ver veículos</a>
+                </div>
+                <div class="card">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    <h3>Dicas de Jogabilidade</h3>
+                    <p>Aprenda estratégias avançadas e técnicas para melhorar seu desempenho nos campos de batalha.</p>
+                    <a href="Interface-do-Jogo.html" class="card-link">Aprender mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="por-que">
+            <h2>Por que usar o War Thunder for Noobs?</h2>
+            <div class="beneficios">
+                <div class="beneficio">
+                    <h3>Conteúdo Atualizado</h3>
+                    <p>Mantemos nosso conteúdo sempre atualizado com as últimas mudanças do jogo.</p>
+                </div>
+                <div class="beneficio2">
+                    <h3>Para Todos os Níveis</h3>
+                    <p>Se você é iniciante ou veterano, encontrará conteúdo útil para melhorar suas habilidades.</p>
+                </div>
+                <div class="beneficio3">
+                    <h3>Comunidade Ativa</h3>
+                    <p>Participe de discussões e compartilhe suas experiências com outros jogadores.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Leonardo Brandão Leal Diniz</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="hamburguer.js"></script>
+</body>
+
+</html>

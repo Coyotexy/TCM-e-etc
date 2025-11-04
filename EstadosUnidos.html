@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados Unidos - War Thunder for Noobs</title>
+    <link rel="stylesheet" href="Home-Page.css">
+    <link rel="stylesheet" href="EstadosUnidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home-Page.html" class="logo-link">
+            <img src="Imagens/Logo.png" alt="Logo do site War Thunder for Noobs - Clique para voltar ao início">
+        </a>
+        <a href="Nacoes.html">Voltar</a>
+        <a href="Veiculos.html">Veículos</a>
+        <a href="Interface-do-Jogo.html">Interface do Jogo</a>
+        <a href="Dicas importantes.html">Dicas Importantes</a>
+
+        <div class="hamburguer" id="hamburguerMenu">
+            <button onclick="abreFecha()" aria-label="Abrir menu">
+                <i id="hamburguer" class="fa fa-bars introducao" aria-hidden="true"></i>
+            </button>
+            <div class="hamburguermostrar" id="submenu">
+                <a href="BatalhasSimulacao.html">Batalhas Simulação</a>
+                <a href="Maisconteudos.html">Mais conteúdos</a>
+                <a href="GuiasAvancados.html">Guias Avançados</a>
+                <a href="Novidades.html">Novidades</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="nation-header">
+            <div class="nation-flag">
+                <img src="Imagens/bandeiraEua.svg" alt="Bandeira dos Estados Unidos">
+            </div>
+            <div class="nation-info">
+                <h1>Estados Unidos</h1>
+                <p class="nation-slogan">"Poder de Fogo e Versatilidade"</p>
+                <div class="nation-stats">
+                    <div class="stat">
+                        <span class="stat-value">★★★★☆</span>
+                        <span class="stat-label">Força Aérea</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">★★★★★</span>
+                        <span class="stat-label">Força Terrestre</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">★★★☆☆</span>
+                        <span class="stat-label">Força Naval</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">★★★☆☆</span>
+                        <span class="stat-label">Dificuldade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nation-intro">
+            <h2>Visão Geral</h2>
+            <p>
+                Os Estados Unidos representam uma das nações mais versáteis e completas em War Thunder.
+                Com uma árvore tecnológica extensa que abrange desde os primeiros tanques e aviões da
+                Segunda Guerra Mundial até os mais modernos equipamentos do século XXI, os EUA oferecem
+                uma experiência de jogo robusta para todos os tipos de jogadores.
+            </p>
+            <div class="playstyle">
+                <h3>Estilo de Jogo Recomendado</h3>
+                <p>
+                    Os veículos americanos geralmente se destacam pelo <strong>poder de fogo</strong> e
+                    <strong>blindagem sólida</strong>, mas podem ser mais lentos que seus equivalentes de
+                    outras nações. A estratégia ideal envolve posicionamento defensivo e uso eficiente
+                    da superioridade aérea.
+                </p>
+            </div>
+        </section>
+
+        <section class="vehicle-types">
+            <h2>Tipos de Veículos</h2>
+
+            <div class="vehicle-category">
+                <div class="category-header">
+                    <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                    <h3>Força Aérea</h3>
+                </div>
+                <div class="category-content">
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <h4>Caças</h4>
+                            <p><strong>Exemplos:</strong> P-51 Mustang, F-86 Sabre, F-4 Phantom II</p>
+                            <p><strong>Características:</strong> Excelente desempenho em alta altitude, armamento
+                                pesado, boa capacidade de mergulho</p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Caças-Bombardeiros</h4>
+                            <p><strong>Exemplos:</strong> P-47 Thunderbolt, F-84 Thunderjet, A-10 Thunderbolt II</p>
+                            <p><strong>Características:</strong> Versáteis, boa carga bélica, resistentes a danos</p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Bombardeiros</h4>
+                            <p><strong>Exemplos:</strong> B-17 Flying Fortress, B-29 Superfortress, B-52 Stratofortress
+                            </p>
+                            <p><strong>Características:</strong> Defesas antiaéreas pesadas, grande capacidade de
+                                bombas, lentos mas resistentes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle-category">
+                <div class="category-header">
+                    <i class="fa fa-tank" aria-hidden="true"></i>
+                    <h3>Força Terrestre</h3>
+                </div>
+                <div class="category-content">
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <h4>Tanques Médios</h4>
+                            <p><strong>Exemplos:</strong> M4 Sherman, M26 Pershing, M60 Patton</p>
+                            <p><strong>Características:</strong> Equilíbrio entre mobilidade, blindagem e poder de fogo
+                            </p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Tanques Pesados</h4>
+                            <p><strong>Exemplos:</strong> M6 Heavy, T34 Heavy, M103 Heavy Tank</p>
+                            <p><strong>Características:</strong> Blindagem espessa, canhões poderosos, baixa mobilidade
+                            </p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Caça-Tanques</h4>
+                            <p><strong>Exemplos:</strong> M10 Wolverine, M18 Hellcat, M36 Jackson</p>
+                            <p><strong>Características:</strong> Alta mobilidade, canhões anticarro eficazes, blindagem
+                                leve</p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Veículos Leves</h4>
+                            <p><strong>Exemplos:</strong> M3 Stuart, M24 Chaffee, M551 Sheridan</p>
+                            <p><strong>Características:</strong> Excelente mobilidade, bons para reconhecimento,
+                                armamento limitado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle-category">
+                <div class="category-header">
+                    <i class="fa fa-ship" aria-hidden="true"></i>
+                    <h3>Força Naval</h3>
+                </div>
+                <div class="category-content">
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <h4>Contratorpedeiros</h4>
+                            <p><strong>Exemplos:</strong> USS Fletcher, USS Somers</p>
+                            <p><strong>Características:</strong> Armamento balanceado, boa velocidade, defesas
+                                antiaéreas sólidas</p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Cruzadores</h4>
+                            <p><strong>Exemplos:</strong> USS Brooklyn, USS Cleveland</p>
+                            <p><strong>Características:</strong> Poder de fogo significativo, blindagem decente,
+                                versáteis em combate</p>
+                        </div>
+                        <div class="vehicle-item">
+                            <h4>Navios de Desembarque</h4>
+                            <p><strong>Exemplos:</strong> LCM, LCS</p>
+                            <p><strong>Características:</strong> Suporte anfíbio, armamento leve, alta mobilidade
+                                costeira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-strategies">
+            <h2>Dicas e Estratégias</h2>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>🛩️ Superioridade Aérea</h4>
+                    <p>Use a altitude a seu favor. Aviões americanos performam melhor em altas altitudes.</p>
+                </div>
+                <div class="strategy-card">
+                    <h4>🎯 Estabilizadores</h4>
+                    <p>Aproveite os estabilizadores verticais presentes em muitos tanques para disparos em movimento.
+                    </p>
+                </div>
+                <div class="strategy-card">
+                    <h4>🛡️ Blindagem Inclinada</h4>
+                    <p>Posicione seu tanque para maximizar a eficiência da blindagem inclinada dos veículos americanos.
+                    </p>
+                </div>
+                <div class="strategy-card">
+                    <h4>💥 Poder de Fogo</h4>
+                    <p>Munição APCR e HEAT são pontos fortes - use-as contra blindagens pesadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Veículos Recomendados -->
+        <section class="recommended-vehicles">
+            <h2>Veículos Recomendados para Iniciantes</h2>
+            <div class="recommended-grid">
+                <div class="recommended-card">
+                    <h4>M4 Sherman (3.7)</h4>
+                    <p>Tanque médio versátil com bom equilíbrio entre blindagem, mobilidade e poder de fogo.</p>
+                </div>
+                <div class="recommended-card">
+                    <h4>P-47 Thunderbolt (3.7)</h4>
+                    <p>Caça-bombardeiro resistente com excelente carga bélica e desempenho em mergulho.</p>
+                </div>
+                <div class="recommended-card">
+                    <h4>M18 Hellcat (5.7)</h4>
+                    <p>Caça-tanques extremamente rápido com canhão eficaz contra blindagens médias.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Leonardo Brandão Leal Diniz</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="hamburguer.js"></script>
+</body>
+
+</html>
